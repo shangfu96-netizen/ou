@@ -277,3 +277,37 @@ section h2::after { /* 標題下方裝飾線 */
         font-size: 0.8rem;
     }
 }
+
+/* ✨ 新增的 Ciallo 動畫樣式 ✨ */
+.ciallo-animation {
+    position: fixed; /* 固定在視窗上，不隨頁面滾動 */
+    z-index: 9999; /* 確保在最上層 */
+    pointer-events: none; /* 讓滑鼠可以穿透，不影響點擊 */
+    font-size: 24px;
+    font-weight: bold;
+    color: #4fd1c5; /* 使用主題的強調色 */
+    text-shadow: 0 0 8px rgba(79, 209, 197, 0.8); /* 增加一點光暈效果 */
+    
+    /* 引用下面定義的動畫 */
+    animation: ciallo-float 3.5s ease-in-out forwards;
+}
+
+/* 定義動畫的關鍵影格 (Keyframes) */
+@keyframes ciallo-float {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(-30px) scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-60px) scale(1.2);
+    }
+}

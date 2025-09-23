@@ -18,28 +18,21 @@ body {
     text-rendering: optimizeLegibility; /* 優化文字可讀性 */
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif; /* 標題使用 Montserrat 字體 */
-    color: #4fd1c5; /* 強調色作為標題色 */
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
 /* 導覽列 (Navbar) */
 .navbar {
-    background-color: #2d3748; /* 卡片背景色作為導覽列背景 */
+    background-color: #2d3748;
     padding: 1rem 0;
-    position: sticky; /* 導覽列固定在頂部 */
+    position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 導覽列陰影 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .navbar nav {
     display: flex;
     justify-content: center;
-    gap: 2.5rem; /* 連結間距 */
-    max-width: 960px; /* 限制導覽列寬度 */
+    gap: 2.5rem;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -50,18 +43,18 @@ h1, h2, h3 {
     font-weight: 700;
     font-size: 1.1rem;
     transition: color 0.3s ease, transform 0.2s ease;
-    padding: 0.5rem 0; /* 增加點擊區域 */
+    padding: 0.5rem 0;
 }
 
 .navbar a:hover {
-    color: #4fd1c5; /* 懸停時使用強調色 */
+    color: #4fd1c5;
     transform: translateY(-2px);
 }
 
 /* 區塊通用樣式 */
 section {
-    padding: 5rem 1.5rem; /* 區塊上下內邊距 */
-    max-width: 960px; /* 限制內容寬度 */
+    padding: 5rem 1.5rem;
+    max-width: 960px;
     margin: 0 auto;
     text-align: center;
 }
@@ -73,7 +66,7 @@ section h2 {
     padding-bottom: 0.5rem;
 }
 
-section h2::after { /* 標題下方裝飾線 */
+section h2::after {
     content: '';
     position: absolute;
     left: 50%;
@@ -87,7 +80,7 @@ section h2::after { /* 標題下方裝飾線 */
 
 /* 英雄區塊 (Hero Section) */
 .hero-section {
-    min-height: 90vh; /* 確保區塊足夠高 */
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,13 +92,13 @@ section h2::after { /* 標題下方裝飾線 */
 .hero-section h1 {
     font-size: 4.5rem;
     margin-bottom: 0.8rem;
-    color: #f7fafc; /* 名字使用淺色 */
+    color: #f7fafc;
     line-height: 1.1;
 }
 
 .hero-section p {
     font-size: 2.2rem;
-    color: #4fd1c5; /* 副標題使用強調色 */
+    color: #4fd1c5;
     font-weight: 300;
 }
 
@@ -114,35 +107,34 @@ section h2::after { /* 標題下方裝飾線 */
     font-size: 1.15rem;
     max-width: 750px;
     margin: 0 auto;
-    color: #cbd5e0; /* 稍淺的文字色 */
+    color: #cbd5e0;
 }
 
 /* 專案 (Projects) */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 自動響應式網格 */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
     text-align: left;
 }
 
 .project-card {
-    background-color: #2d3748; /* 卡片背景色 */
+    background-color: #2d3748;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex; /* 讓卡片內部內容也使用 flex 方便排版 */
+    display: flex;
     flex-direction: column;
 }
 
 .project-card:hover {
-    transform: translateY(-8px); /* 懸停時上移 */
+    transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .project-card h3 {
-    color: #f7fafc;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -150,14 +142,14 @@ section h2::after { /* 標題下方裝飾線 */
 .project-card p {
     font-size: 1rem;
     color: #cbd5e0;
-    flex-grow: 1; /* 讓描述內容佔滿剩餘空間 */
+    flex-grow: 1;
 }
 
 /* 聯絡方式 (Contact) */
 .email-button {
     display: inline-block;
     background-color: #4fd1c5;
-    color: #1a202c; /* 按鈕文字使用深色 */
+    color: #1a202c;
     padding: 1rem 2.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -169,7 +161,7 @@ section h2::after { /* 標題下方裝飾線 */
 }
 
 .email-button:hover {
-    background-color: #38b2ac; /* 懸停時顏色稍深 */
+    background-color: #38b2ac;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
@@ -201,113 +193,68 @@ section h2::after { /* 標題下方裝飾線 */
     transform: translateY(-2px);
 }
 
-/* 響應式調整 (Responsive Adjustments) */
+/* 標題與內文通用樣式 (h1, h2, h3, p) */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4fd1c5;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+h1, h2, h3, p {
+    /* ✨ 套用文字抖動動畫 ✨ */
+    animation: text-jitter 8s infinite linear alternate;
+}
+
+/* 響應式調整 */
 @media (max-width: 768px) {
-    .hero-section {
-        min-height: 70vh;
-    }
-
-    .hero-section h1 {
-        font-size: 3.5rem;
-    }
-
-    .hero-section p {
-        font-size: 1.8rem;
-    }
-
-    section {
-        padding: 4rem 1rem;
-    }
-
-    section h2 {
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr; /* 小螢幕時單列顯示 */
-    }
-
-    .navbar nav {
-        flex-direction: column; /* 小螢幕時導覽列垂直排列 */
-        gap: 1.5rem;
-        padding: 0.8rem 1rem;
-    }
-    .navbar a {
-        font-size: 1rem;
-    }
+    .hero-section { min-height: 70vh; }
+    .hero-section h1 { font-size: 3.5rem; }
+    .hero-section p { font-size: 1.8rem; }
+    section { padding: 4rem 1rem; }
+    section h2 { font-size: 2.2rem; margin-bottom: 2rem; }
+    .project-grid { grid-template-columns: 1fr; }
+    .navbar nav { flex-direction: column; gap: 1.5rem; padding: 0.8rem 1rem; }
+    .navbar a { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
-    .hero-section h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero-section p {
-        font-size: 1.5rem;
-    }
-
-    section {
-        padding: 3rem 1rem;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    .project-card {
-        padding: 1.5rem;
-    }
-
-    .project-card h3 {
-        font-size: 1.5rem;
-    }
-
-    .email-button {
-        font-size: 1rem;
-        padding: 0.8rem 2rem;
-    }
-
-    .footer .social-links a {
-        margin: 0 0.6rem;
-        font-size: 0.85rem;
-    }
-
-    .footer p {
-        font-size: 0.8rem;
-    }
+    .hero-section h1 { font-size: 2.8rem; }
+    .hero-section p { font-size: 1.5rem; }
+    section { padding: 3rem 1rem; }
+    section h2 { font-size: 1.8rem; }
+    .project-card { padding: 1.5rem; }
+    .project-card h3 { font-size: 1.5rem; }
+    .email-button { font-size: 1rem; padding: 0.8rem 2rem; }
+    .footer .social-links a { margin: 0 0.6rem; font-size: 0.85rem; }
+    .footer p { font-size: 0.8rem; }
 }
 
-/* ✨ 新增的 Ciallo 動畫樣式 ✨ */
+/* --- ✨ 動畫效果區塊 ✨ --- */
+
+/* 1. Ciallo 動畫樣式 (顏色已更新) */
 .ciallo-animation {
-    position: fixed; /* 固定在視窗上，不隨頁面滾動 */
-    z-index: 9999; /* 確保在最上層 */
-    pointer-events: none; /* 讓滑鼠可以穿透，不影響點擊 */
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
     font-size: 24px;
     font-weight: bold;
-    color: #4fd1c5; /* 使用主題的強調色 */
-    text-shadow: 0 0 8px rgba(79, 209, 197, 0.8); /* 增加一點光暈效果 */
-    
-    /* 引用下面定義的動畫 */
+    color: #f7fafc; /* ✨ 更新為白色 */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* ✨ 更新為白色光暈 */
     animation: ciallo-float 3.5s ease-in-out forwards;
 }
 
-/* 定義動畫的關鍵影格 (Keyframes) */
 @keyframes ciallo-float {
-    0% {
-        opacity: 0;
-        transform: translateY(20px) scale(0.8);
-    }
-    20% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-    80% {
-        opacity: 1;
-        transform: translateY(-30px) scale(1.1);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-60px) scale(1.2);
-    }
+    0% { opacity: 0; transform: translateY(20px) scale(0.8); }
+    20% { opacity: 1; transform: translateY(0) scale(1); }
+    80% { opacity: 1; transform: translateY(-30px) scale(1.1); }
+    100% { opacity: 0; transform: translateY(-60px) scale(1.2); }
+}
+
+/* 2. 新增的文字抖動動畫 */
+@keyframes text-jitter {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(-1px, 1px); }
+    50%  { transform: translate(1px, -1px); }
+    75%  { transform: translate(1px, 1px); }
+    100% { transform: translate(0, 0); }
 }

@@ -27,10 +27,7 @@
         <section id="about" class="about-section">
             <h2>關於我</h2>
             <p>
-                嗨，我是 [請填寫你的名字]！我是一位熱衷於前端開發的學生/開發者，專注於打造優雅且使用者友善的網頁體驗。
-                我對學習新技術充滿熱情，並樂於將創意轉化為實際的網頁應用。
-                在 [請填寫你的學校與科系] 的學習過程中，我深入了解了 HTML、CSS 和 JavaScript 的核心概念，並實踐了多個專案。
-                我相信透過不斷的學習和實踐，能夠創作出更多有價值的數位產品。期待與您交流！
+                你說的對，但是ciallo (∠・ω )⌒☆
             </p>
         </section>
 
@@ -38,19 +35,19 @@
             <h2>我的專案</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>專案一：響應式個人網站</h3>
+                    <h3>專案一：ciallo (∠・ω )⌒☆</h3>
                     <p>
-                        使用 HTML5 和 CSS3 建立的響應式個人作品集網站。
-                        展示了我的前端開發技能，並確保在不同裝置上都能提供良好的使用者體驗。
-                        主要功能包括平滑捲動導覽、現代深色主題設計。
+                        ciallo (∠・ω )⌒☆
+                        ciallo (∠・ω )⌒☆
+                        ciallo (∠・ω )⌒☆
                     </p>
                 </div>
                 <div class="project-card">
-                    <h3>專案二：任務管理工具 (概念原型)</h3>
+                    <h3>專案二：ciallo (∠・ω )⌒☆</h3>
                     <p>
-                        一個基於純 HTML/CSS/JavaScript 的輕量級任務管理應用原型。
-                        用戶可以新增、編輯、刪除任務，並標記任務完成狀態。
-                        此專案主要目的是練習 DOM 操作和基礎 JavaScript 邏輯。
+                        ciallo (∠・ω )⌒☆
+                        ciallo (∠・ω )⌒☆
+                        ciallo (∠・ω )⌒☆
                     </p>
                 </div>
             </div>
@@ -58,7 +55,7 @@
 
         <section id="contact" class="contact-section">
             <h2>聯絡我</h2>
-            <a href="mailto:[請填寫你的Email]" class="email-button">發送 Email</a>
+            <a href="mailto:[請填寫你的Email]" class="email-button">ciallo (∠・ω )⌒☆</a>
         </section>
     </main>
 
@@ -67,10 +64,10 @@
             <a href="https://github.com/[請填寫你的GitHub使用者名稱]" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/[請填寫你的LinkedIn個人檔案ID]" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-        <p>&copy; 2025 [請填寫你的名字]</p>
+        <p>&copy; 2025 ciallo (∠・ω )⌒☆</p>
     </footer>
 
-    <!-- ✨ 新增的 JavaScript 區塊 ✨ -->
+    <!-- ✨ 更新後的 JavaScript 區塊 ✨ -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // 創建 ciallo 動畫的函數
@@ -80,15 +77,15 @@
                 ciallo.classList.add('ciallo-animation');
 
                 // 隨機設定 ciallo 的初始位置
-                const x = Math.random() * (window.innerWidth - 200); // 減去寬度以防超出螢幕
-                const y = Math.random() * (window.innerHeight - 100); // 減去高度以防超出螢幕
+                const x = Math.random() * (window.innerWidth - 200);
+                const y = Math.random() * (window.innerHeight - 100);
                 ciallo.style.left = `${x}px`;
                 ciallo.style.top = `${y}px`;
 
                 // 將 ciallo 加入到 body 中
                 document.body.appendChild(ciallo);
 
-                // 動畫結束後自動移除元素，避免佔用資源
+                // 動畫結束後自動移除元素
                 ciallo.addEventListener('animationend', () => {
                     ciallo.remove();
                 });
@@ -96,8 +93,8 @@
 
             // 使用 setTimeout 實現不定時觸發
             function triggerAnimationLoop() {
-                // 隨機生成 1 到 5 秒的延遲時間
-                const randomDelay = Math.random() * 4000 + 1000;
+                // 隨機生成 2 到 6 秒的延遲時間
+                const randomDelay = Math.random() * 4000 + 2000;
                 
                 setTimeout(() => {
                     createCialloAnimation();
@@ -105,8 +102,10 @@
                 }, randomDelay);
             }
 
-            // 啟動動畫循環
-            triggerAnimationLoop();
+            // ✨ 啟動三個獨立的動畫循環，並稍微錯開時間 ✨
+            triggerAnimationLoop(); // 立即啟動第一個
+            setTimeout(triggerAnimationLoop, 1500); // 1.5秒後啟動第二個
+            setTimeout(triggerAnimationLoop, 3000); // 3秒後啟動第三個
         });
     </script>
 </body>

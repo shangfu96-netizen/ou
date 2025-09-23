@@ -88,7 +88,7 @@ h1, h2, h3, p { animation: text-jitter 8s infinite linear alternate; }
 }
 
 /* 2. 三種不同的 Ciallo 動畫 */
-.anim-float { animation: ciallo-float 3.5s ease-in-out forwards; }
+.anim-float { animation: ciallo-float 2.5s ease-in-out forwards; }
 @keyframes ciallo-float {
     0%   { opacity: 0; transform: translateY(20px) scale(0.8); }
     20%  { opacity: 1; transform: translateY(0) scale(1); }
@@ -103,7 +103,7 @@ h1, h2, h3, p { animation: text-jitter 8s infinite linear alternate; }
     100% { opacity: 0; transform: translateY(40px) rotate(720deg) scale(0); }
 }
 
-.anim-zoom { animation: ciallo-zoom-in-out 2.5s ease-out forwards; }
+.anim-zoom { animation: ciallo-zoom-in-out 2s ease-out forwards; }
 @keyframes ciallo-zoom-in-out {
     0%   { opacity: 0; transform: scale(0.1); }
     50%  { opacity: 1; transform: scale(1.2); }
@@ -113,8 +113,8 @@ h1, h2, h3, p { animation: text-jitter 8s infinite linear alternate; }
 /* 3. 文字抖動動畫 */
 @keyframes text-jitter {
     0%   { transform: translate(0, 0); }
-    25%  { transform: translate(-1px, 1px); }
-    50%  { transform: translate(1px, -1px); }
-    75%  { transform: translate(1px, 1px); }
+    25%  { transform: translate(-2px, 2px); }
+    50%  { transform: translate(2px, -2px); }
+    75%  { transform: translate(2px, 2px); }
     100% { transform: translate(0, 0); }
 }

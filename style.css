@@ -21,12 +21,12 @@ body {
 }
 .navbar nav { display: flex; justify-content: center; gap: 2.5rem; max-width: 960px; margin: 0 auto; padding: 0 1.5rem; }
 .navbar a { color: #ffffff; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: color 0.3s ease, transform 0.2s ease; padding: 0.5rem 0; }
-.navbar a:hover { color: #009dff; transform: translateY(-2px); }
+.navbar a:hover { color: #42b6ff; transform: translateY(-2px); }
 
 /* 區塊通用樣式 */
 section { padding: 5rem 1.5rem; max-width: 960px; margin: 0 auto; text-align: center; }
 section h2 { font-size: 2.8rem; margin-bottom: 2.5rem; position: relative; padding-bottom: 0.5rem; }
-section h2::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 60px; height: 4px; background-color: #009dff; border-radius: 2px; }
+section h2::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 60px; height: 4px; background-color: #42b6ff; border-radius: 2px; }
 
 /* 英雄區塊 */
 .hero-section {
@@ -38,7 +38,7 @@ section h2::after { content: ''; position: absolute; left: 50%; bottom: 0; trans
     padding: 2rem 1rem;
 }
 .hero-section h1 { font-size: 4.5rem; margin-bottom: 0.8rem; line-height: 1.1; }
-.hero-section p { font-size: 2.2rem; color: #009dff; font-weight: 300; }
+.hero-section p { font-size: 2.2rem; color: #42b6ff; font-weight: 300; }
 
 /* 關於我 */
 .about-section p { font-size: 1.15rem; max-width: 750px; margin: 0 auto; color: #ffffff; }
@@ -51,17 +51,17 @@ section h2::after { content: ''; position: absolute; left: 50%; bottom: 0; trans
 .project-card p { font-size: 1rem; color: #ffffff; flex-grow: 1; }
 
 /* 聯絡方式 */
-.email-button { display: inline-block; background-color: #009dff; color: #1a202c; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.2rem; transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; margin-top: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); }
+.email-button { display: inline-block; background-color: #42b6ff; color: #1a202c; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.2rem; transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; margin-top: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); }
 .email-button:hover { background-color: #0080ff; transform: translateY(-3px); box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); }
 
 /* 頁尾 */
 .footer { background-color: #2d3748; padding: 2.5rem 1.5rem; text-align: center; margin-top: 5rem; font-size: 0.95rem; color: #ffffff; }
 .footer .social-links { margin-bottom: 1.2rem; }
 .footer .social-links a { color: #ffffff; text-decoration: none; margin: 0 1rem; font-weight: 500; transition: color 0.3s ease; }
-.footer .social-links a:hover { color: #009dff; }
+.footer .social-links a:hover { color: #42b6ff; }
 
 /* 標題與內文通用樣式 */
-h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #009dff; margin-bottom: 1rem; font-weight: 700; }
+h1, h2, h3 { font-family: 'Montserrat', sans-serif; color: #42b6ff; margin-bottom: 1rem; font-weight: 700; }
 h1, h2, h3, p { animation: text-jitter 8s infinite linear alternate; }
 .hero-section h1 { color: #ffffff; }
 
